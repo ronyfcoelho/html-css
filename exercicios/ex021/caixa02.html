@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(194, 194, 194);
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgb(160, 160, 160);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+
+        }
+        
+        footer > p{
+            margin: 0px;
+        }
+ 
+    </style>
+</head>
+<body> 
+    <header><!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--podemos colocar os links / seria o menu-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main> <!--Conteudo principal-->
+        <section id="assuntos">
+            <p>Esportes Política Economia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus distinctio sunt nobis quibusdam? Dolore, sed consequuntur fuga fugiat nesciunt eligendi, repellat rem accusantium vitae quaerat at nisi sint, suscipit ducimus.</p>
+            
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <p></p>
+            </article>
+
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido pelo Rony Felix - 2025</p>
+    </footer>
+</body>
+</html>

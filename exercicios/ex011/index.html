@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzir aúdios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <p>Infelizente seu navegador não consegue produzir áudio. <a href="midia/musica.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h1>Inserir vídeos hospedado localmente</h1>
+    <p>Vamos aprender hospedar meu próprio servidor</p>
+    <video width="560" height="315" autoplay muted>
+        <source src="midia/Video.mp4" type="video/mp4">
+        <p><a href="midia/Video.mp4">f</a>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserir vídeos externos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=BBfrs7c4H-zuAuXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserir vídeos externos do Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/811685131?h=df644f4a0b" width="560" height="315" frameborder="0"    allowfullscreen></iframe>
+
+    
+
+</body>
+</html>

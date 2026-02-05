@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        
+        */
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:visited{
+            color: chocolate;
+        }
+
+        a:active{
+            color: greenyellow;
+        }
+
+        .especial:hover::after{
+            content: ' [LINK]';
+            color: blue;
+        }
+
+        /*a:hover::before{
+            content: '[LINK] ';
+            color: blue;
+        }*/
+
+       
+    </style>
+</head>
+<body>
+    <h1>Personalização de Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@AlgodaoApoloHigieneeBeleza" target="_blank">Acesse o Youtube</a></li>
+        <li><a href="https://www.instagram.com/apoloalgodao/" target="_blank" class="especial">Acesse o Instagram</a></li>
+        <li><a href="https://algodaoapolo.com.br/" target="_blank">Acesse o Site</a></li>
+    </ul>
+
+</body>
+</html>
