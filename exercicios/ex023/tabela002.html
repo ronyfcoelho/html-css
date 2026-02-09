@@ -12,12 +12,13 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
            
         }
 
         td, th{
             border: 1px solid black; 
-            padding: 10px;  
+            padding: 5px;  
         }
 
         caption{
@@ -28,8 +29,22 @@
         }
 
         thead, tfoot{
-            background-color: yellow;
-            color: black;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        thead > tr > th{
+            background-color: black ;
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(odd){ /*2n-1*/
+            background-color: rgb(197, 215, 248);
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: cornflowerblue;
         }
 
         td.num{
